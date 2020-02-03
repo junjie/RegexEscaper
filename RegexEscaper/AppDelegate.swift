@@ -33,5 +33,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTextViewDelegate {
 		escapeRegularExpression()
 	}
 	
+	@IBAction func copyEscapeText(_ sender: Any) {
+		NSPasteboard.general.declareTypes([.string], owner: nil)
+		NSPasteboard.general.setString(destinationTextView.string, forType: .string)
+	}
 }
 
