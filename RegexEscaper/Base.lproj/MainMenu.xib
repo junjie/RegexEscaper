@@ -12,7 +12,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="RegexEscaper" customModuleProvider="target">
             <connections>
                 <outlet property="destinationTextView" destination="deF-XV-h8E" id="XPZ-bg-8YN"/>
@@ -714,7 +714,7 @@
                                                     <size key="maxSize" width="240" height="10000000"/>
                                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <connections>
-                                                        <outlet property="delegate" destination="-2" id="jAm-ng-MeJ"/>
+                                                        <outlet property="delegate" destination="Voe-Tx-rLC" id="YVD-4k-0DO"/>
                                                     </connections>
                                                 </textView>
                                             </subviews>
@@ -746,7 +746,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="233" height="360"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" smartInsertDelete="YES" id="deF-XV-h8E">
+                                                <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" smartInsertDelete="YES" id="deF-XV-h8E">
                                                     <rect key="frame" x="0.0" y="0.0" width="233" height="360"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
